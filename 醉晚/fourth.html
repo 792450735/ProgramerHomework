@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>fourth</title>
+    <style type="text/css">
+.div1-1{width:100%;height: 700px;background:url(raise.jpg)}
+.div1-2{margin: 0 auto;width:1200px ;height:150px;background: gray}
+.div1-3{float: right;width: 500px;height: 100;background: gray}
+*{
+    margin:0;
+    padding:0;
+}
+.clear:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+nav{
+    display:inline-block;
+    border:1px solid #505255;
+    border-bottom: 1px solid #282C2F;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin:50px;
+    -webkit-box-shadow:1px 1px 3px #292929;
+    -moz-box-shadow:1px 1px 3px #292929;
+}
+li{
+    list-style:none;
+    float:left;
+    border-right: 1px solid #2E3235;
+    position: relative;
+    background:#555D5F;
+}
+li:hover{
+    background:#3E4245;
+    -moz-transition: background 1s ease-out;
+    -webkit-transition: background 1s ease-out;
+}
+li a{
+    display:block;
+    height:40px;
+    line-height:40px;
+    padding:0 30px;
+    font-size:12px;
+    color:#fff;
+    text-shadow: 0px -1px 0px #000;
+    text-decoration:none;
+    white-space:nowrap;
+    border-left: 1px solid #999E9F;
+    border-top: 1px solid #999E9F;
+    -moz-border-top-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+    
+    z-index:100;
+}
+li > a{
+    position:relative;
+}
+li.first a{
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+}
+li.last{
+    border-right: 0 none;
+}
+
+
+dl{
+    position:absolute;
+    display:block;
+    top:40px;
+    left: -25px;
+    
+    width:165px;
+    
+    background:#222222;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    
+    -webkit-box-shadow:1px 1px 3px #292929;
+    -moz-box-shadow:1px 1px 3px #292929;
+    
+    z-index:10;
+            
+}
+li:hover dl{
+    top:50px;
+    display:block;
+    width:145px;
+    padding:10px;
+}
+dl a{
+    background:transparent;
+    border:0 none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-transition: background 0.5s ease-out;
+    -webkit-transition: background 0.5s ease-out;
+    
+    z-index:50;
+}
+dl a:hover{
+    color:#FFF;
+    background:#999E9F;
+    -moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+dd{
+    margin-top:-40px;
+    opacity:0;
+    width:145px;
+    -webkit-transition-property:all;
+    -moz-transition-property: all;
+}
+li:hover dd{
+    margin-top:0;
+    opacity:1;
+}
+li dd:nth-child(1){
+    -webkit-transition-duration: 0.1s;
+    -moz-transition-duration: 0.1s;
+}
+li dd:nth-child(2){
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+}
+li dd:nth-child(3){
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+}
+li dd:nth-child(4){
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+}
+dt{
+    display:none;
+    margin-top:-25px;
+    padding-top:15px;
+    height:10px;
+}
+li:hover dt{
+    display:block;
+}
+.Darrow{
+    float:right;
+    margin:18px 10px 0 0;
+    border-width:5px;
+    border-color:#FFF transparent transparent transparent;
+    border-style:solid;
+    width:0;
+    height:0;
+    line-height:0;
+    overflow:hidden;
+    
+    cursor:pointer;
+    
+    text-shadow: 0px -1px 0px #000;
+    
+    -webkit-box-shadow:0px -1px 0px #000;
+    -moz-box-shadow:0px -1px 0px #000;
+}
+.arrow{
+    margin:0 auto;
+    margin-top:-5px;
+    display:block;
+    width:10px;
+    height:10px;
+    background:#222222;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.div2{margin: 0 auto;width: 350px;height: 200px;margin: 0 auto;text-align:center;border: top 50px}
+.div3-1{margin: 0 auto;width: 800px;height: 280px;background: black;border-radius: 40px;text-align: center;}
+.div3-2{margin: 0 auto;width: 800px;height: 70px;background: gray;border-radius: 40px;text-align: center;line-height: 70px;font: white}
+.div3-3{margin: 0 auto;width: 800px;height: 70px;background: black;border-radius: 40px;text-align: center;line-height: 70px}
+.div4-0{margin: 50px ;width: 1200px;height: 600px;background: white;text-align: center;}
+.div4-6{float:left;margin: 10px;width: 380px;height: 280px;background: black; }
+    </style>
+
+</head> 
+<body>
+    <div class="div1-1">
+        <div class="div1-2">
+            <a href="http://seeego.github.io/"><img src="logo.png"></a>
+            <div class="div1-3">
+                <nav>
+    <ul class="clear">
+        <li>
+            <span class="Darrow"></span>
+            <a href="#">Here!</a>
+            <dl>
+                <dt><span class="arrow"></span></dt>
+                <dd><a href="http://www.cnblogs.com/hyperz">博客园</a></dd>
+                <dd><a href="http://superzh.sinaapp.com">自博客</a></dd>
+                <dd><a href="https://github.com/Seeego">GITHUB</a></dd>
+                <dd><a href="http://blog.sina.com.cn/u/5253881269">About Me</a></dd>
+            </dl>
+        </li>
+        
+    </ul>
+</nav>
+        </div>
+    </div>
+    </div>
+<div class="div2">
+    <p>接受与享受的距离只是热爱</p>
+    <p><sup><img src="quote-1.png" ></sup>我会说一些想说的句子，而非段子。<sub><img src="quote-2.png" ></sub> </p>
+</div>
+<div class="div3-1">
+    <div class="div3-2"><a href="#" title="玩乐"style="text-decoration: none"; ><font color="white";size="6">ALL</font></div>
+    <div onmouseout="this.className='div3-3'"onmouseover="this.className='div3-2'" ><a href="#" title="玩乐"style="text-decoration: none"; ><font color="red";size="6">TRAVEL</font></a></div>
+    <div onmouseout="this.className='div3-3'"onmouseover="this.className='div3-2'" ><a href="#" title="玩乐"style="text-decoration: none"; ><font color="red";size="6">HUST</font></a></div> 
+    <div onmouseout="this.className='div3-3'"onmouseover="this.className='div3-2'" ><a href="#" title="玩乐"style="text-decoration: none"; ><font color="red";size="6">STUDY</font></a></div>    
+</div>
+<div class="div4-0">
+    <div class="div4-6"><img src="down.jpg"></div>
+    <div class="div4-6"><img src="down.jpg"></div>
+    <div class="div4-6"><img src="down.jpg"></div>
+    <div class="div4-6"><img src="down.jpg"></div>
+    <div class="div4-6"><img src="down.jpg"></div>
+    <div class="div4-6"><img src="down.jpg"></div>
+</div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
